@@ -9,7 +9,7 @@ from prompts import new_prompt, instruction_str, context
 from note_engine import note_engine
 from llama_index.core.tools import QueryEngineTool, ToolMetadata
 from llama_index.core.agent import ReActAgent
-from pdf import brasil_engine
+from pdf import get_brasil_engine
 
 
 load_dotenv()
@@ -37,7 +37,7 @@ def main():
             ),
         ),
         QueryEngineTool(
-            query_engine=brasil_engine,
+            query_engine=get_brasil_engine(),
             metadata=ToolMetadata(
                 name='Brasil',
                 description='this gives detailed information about Brasil, '
