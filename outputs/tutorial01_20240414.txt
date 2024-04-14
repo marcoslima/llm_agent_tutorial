@@ -1,0 +1,8 @@
+/home/marcos/.virtualenvs/ai_agent_tutorial01/bin/python /home/marcos/projects/labs/ai_agent/tutorial01/main.py
+> Pandas Instructions:
+```
+df[df['Country'] == 'Brazil']['Population2023'].values[0]
+```
+> Pandas Output: 216422446
+
+Process finished with exit code 0
